@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4dd68f59-cbee-47df-926e-d72680a1e900" name="Default Changelist" comment="" />
+    <list default="true" id="4dd68f59-cbee-47df-926e-d72680a1e900" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/stack/503stack.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stack/636stack.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stack/stack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack/402stack.go" beforeDir="false" afterPath="$PROJECT_DIR$/stack/402stack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack/456stack.go" beforeDir="false" afterPath="$PROJECT_DIR$/stack/456stack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack/stack_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/stack/stack_test.go" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,26 +21,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stack/stack_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+            <state relative-caret-position="474">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stack/402stack.go">
+        <entry file="file://$PROJECT_DIR$/stack/stack.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="25" selection-end-column="1" />
+            <state relative-caret-position="-1239">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="70" selection-end-column="1" />
+              <folding>
+                <element signature="e#15#33#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/stack/456stack.go">
+        <entry file="file://$PROJECT_DIR$/stack/636stack.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="64" selection-start-line="64" selection-end-line="69" selection-end-column="1" />
+            <state relative-caret-position="149">
+              <caret line="27" column="21" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="21" />
+              <folding>
+                <element signature="e#15#47#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,9 +73,12 @@
         <option value="$PROJECT_DIR$/stack/71stack.go" />
         <option value="$PROJECT_DIR$/stack/394stack.go" />
         <option value="$PROJECT_DIR$/stack/20stack.go" />
-        <option value="$PROJECT_DIR$/stack/stack_test.go" />
-        <option value="$PROJECT_DIR$/stack/402stack.go" />
         <option value="$PROJECT_DIR$/stack/456stack.go" />
+        <option value="$PROJECT_DIR$/stack/402stack.go" />
+        <option value="$PROJECT_DIR$/stack/503stack.go" />
+        <option value="$PROJECT_DIR$/stack/stack.go" />
+        <option value="$PROJECT_DIR$/stack/stack_test.go" />
+        <option value="$PROJECT_DIR$/stack/636stack.go" />
       </list>
     </option>
   </component>
@@ -82,11 +99,6 @@
             <path>
               <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="myProject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myProject" type="462c0819:PsiDirectoryNode" />
-              <item name="mysort" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
@@ -142,7 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestRemoveKdigits in myProject/stack">
+  <component name="RunManager" selected="Go Test.TestExclusiveTime in myProject/stack">
     <configuration name="TestDecodeString in myProject/stack" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="myProject" />
       <working_directory value="$PROJECT_DIR$/stack" />
@@ -152,13 +164,37 @@
       <pattern value="^TestDecodeString$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestFindKthLargest in myProject/stack" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestExclusiveTime in myProject/stack" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="myProject" />
       <working_directory value="$PROJECT_DIR$/stack" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
       <package value="myProject/stack" />
-      <pattern value="^TestFindKthLargest$" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestExclusiveTime$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestMyStack in myProject/stack" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="myProject" />
+      <working_directory value="$PROJECT_DIR$/stack" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="myProject/stack" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestMyStack$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestNextGreaterElements in myProject/stack" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="myProject" />
+      <working_directory value="$PROJECT_DIR$/stack" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="myProject/stack" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestNextGreaterElements$" />
       <method v="2" />
     </configuration>
     <configuration name="TestRemoveKdigits in myProject/stack" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -172,73 +208,66 @@
       <pattern value="^TestRemoveKdigits$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestSimplifyPath in myProject/stack" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="myProject" />
-      <working_directory value="$PROJECT_DIR$/stack" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="myProject/stack" />
-      <pattern value="^TestSimplifyPath$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestRemoveKdigits in myProject/stack" />
+        <item itemvalue="Go Test.TestExclusiveTime in myProject/stack" />
+        <item itemvalue="Go Test.TestNextGreaterElements in myProject/stack" />
+        <item itemvalue="Go Test.TestMyStack in myProject/stack" />
         <item itemvalue="Go Test.TestDecodeString in myProject/stack" />
-        <item itemvalue="Go Test.TestSimplifyPath in myProject/stack" />
-        <item itemvalue="Go Test.TestFindKthLargest in myProject/stack" />
+        <item itemvalue="Go Test.TestRemoveKdigits in myProject/stack" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestDecodeString_in_myProject_stack - 2019.12.29 at 16h 56m 26s.xml">
-      <configuration name="TestDecodeString in myProject/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestMyStack_in_myProject_stack - 2019.12.31 at 14h 40m 10s.xml">
+      <configuration name="TestMyStack in myProject/stack" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDecodeString_in_myProject_stack - 2019.12.29 at 16h 56m 28s.xml">
-      <configuration name="TestDecodeString in myProject/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestNextGreaterElements_in_myProject_stack - 2019.12.31 at 14h 40m 21s.xml">
+      <configuration name="TestNextGreaterElements in myProject/stack" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDecodeString_in_myProject_stack - 2019.12.29 at 16h 57m 54s.xml">
-      <configuration name="TestDecodeString in myProject/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestMyStack_in_myProject_stack - 2019.12.31 at 14h 43m 03s.xml">
+      <configuration name="TestMyStack in myProject/stack" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDecodeString_in_myProject_stack - 2019.12.29 at 16h 59m 02s.xml">
-      <configuration name="TestDecodeString in myProject/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestMyStack_in_myProject_stack - 2019.12.31 at 19h 31m 09s.xml">
+      <configuration name="TestMyStack in myProject/stack" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDecodeString_in_myProject_stack - 2019.12.29 at 17h 01m 16s.xml">
-      <configuration name="TestDecodeString in myProject/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestExclusiveTime_in_myProject_stack - 2019.12.31 at 19h 31m 39s.xml">
+      <configuration name="TestExclusiveTime in myProject/stack" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDecodeString_in_myProject_stack - 2019.12.29 at 17h 01m 28s.xml">
-      <configuration name="TestDecodeString in myProject/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestNextGreaterElements_in_myProject_stack - 2019.12.31 at 19h 31m 42s.xml">
+      <configuration name="TestNextGreaterElements in myProject/stack" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDecodeString_in_myProject_stack - 2019.12.29 at 17h 01m 50s.xml">
-      <configuration name="TestDecodeString in myProject/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestExclusiveTime_in_myProject_stack - 2019.12.31 at 19h 35m 29s.xml">
+      <configuration name="TestExclusiveTime in myProject/stack" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDecodeString_in_myProject_stack - 2019.12.29 at 17h 21m 57s.xml">
-      <configuration name="TestDecodeString in myProject/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestExclusiveTime_in_myProject_stack - 2019.12.31 at 19h 35m 33s.xml">
+      <configuration name="TestExclusiveTime in myProject/stack" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDecodeString_in_myProject_stack - 2019.12.29 at 17h 22m 00s.xml">
-      <configuration name="TestDecodeString in myProject/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestExclusiveTime_in_myProject_stack - 2019.12.31 at 19h 37m 37s.xml">
+      <configuration name="TestExclusiveTime in myProject/stack" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestRemoveKdigits_in_myProject_stack - 2019.12.30 at 10h 08m 50s.xml">
-      <configuration name="TestRemoveKdigits in myProject/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestExclusiveTime_in_myProject_stack - 2019.12.31 at 19h 38m 52s.xml">
+      <configuration name="TestExclusiveTime in myProject/stack" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23687424" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23931624" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32946634" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33571428" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" weight="0.24285714" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33571428" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" weight="0.39591837" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32946634" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32946634" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.29285714" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.29285714" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50061053" side_tool="true" weight="0.42227378" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -256,6 +285,12 @@
           <url>file://$PROJECT_DIR$/mysort/215sort_test.go</url>
           <line>9</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/stack/stack_test.go</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -280,15 +315,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stack/394stack.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="95">
           <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stack/71stack.go">
+    <entry file="file://$PROJECT_DIR$/stack/456stack.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="32" />
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stack/402stack.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1387">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
         </state>
       </provider>
     </entry>
@@ -299,24 +341,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/stack/71stack.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-141">
+          <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.12.5/libexec/src/sync/mutex.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3230">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.12.5/libexec/src/runtime/asm_amd64.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9842">
+          <caret line="518" selection-start-line="518" selection-end-line="518" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.12.5/libexec/src/runtime/panic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9899">
+          <caret line="525" selection-start-line="525" selection-end-line="525" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.12.5/libexec/src/testing/testing.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="802" selection-start-line="802" selection-end-line="802" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stack/503stack.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/stack/stack_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        <state relative-caret-position="474">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stack/402stack.go">
+    <entry file="file://$PROJECT_DIR$/stack/stack.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="25" selection-end-column="1" />
+        <state relative-caret-position="-1239">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="70" selection-end-column="1" />
+          <folding>
+            <element signature="e#15#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stack/456stack.go">
+    <entry file="file://$PROJECT_DIR$/stack/636stack.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="64" selection-start-line="64" selection-end-line="69" selection-end-column="1" />
+        <state relative-caret-position="149">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <element signature="e#15#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

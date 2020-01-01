@@ -1,12 +1,12 @@
 package stack
 
-type Stack []byte
+type stack []byte
 
-func (s *Stack) Push(v byte){
+func (s *stack) Push(v byte){
 	*s = append((*s), v)
 }
 
-func (s *Stack) Pop() byte{
+func (s *stack) Pop() byte{
 	l := len(*s)
 	v := (*s)[l - 1]
 	*s = (*s)[:l - 1]
@@ -14,21 +14,21 @@ func (s *Stack) Pop() byte{
 	return v
 }
 
-func (s *Stack) Seek() byte{
+func (s *stack) Seek() byte{
 	l := len(*s)
 	v := (*s)[l - 1]
 
 	return v
 }
 
-func (s *Stack) Len() int{
+func (s *stack) Len() int{
 	return len(*s)
 }
 
 //num = "1432219", k = 3   1219
 func removeKdigits(num string, k int) string {
 	res := "0"
-	stack := Stack{}
+	stack := stack{}
 
 	//边界判断
 	if len(num) == 0{
@@ -70,31 +70,6 @@ func removeKdigits(num string, k int) string {
 	}
 	return res
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

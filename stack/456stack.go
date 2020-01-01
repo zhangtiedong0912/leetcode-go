@@ -1,8 +1,6 @@
 package stack
 
-
-
-type stack []int
+/*type stack []int
 
 func (s *stack) Push(v int){
 	*s = append((*s), v)
@@ -25,7 +23,7 @@ func (s *stack) Seek() int{
 
 func (s *stack) Len() int{
 	return len(*s)
-}
+}*/
 
 const (
 	INT_MAX = int(^uint(0) >> 1)
@@ -43,7 +41,7 @@ func find132pattern(nums []int) bool {
 	if len(nums) < 3 {
 		return false
 	}
-	stack := stack{}
+	stack := Stack{}
 	len :=len(nums)-1
 
 	second := INT_MIN
@@ -52,8 +50,8 @@ func find132pattern(nums []int) bool {
 			return true
 		}
 
-		for stack.Len()!= 0 && nums[i]>stack.Seek(){
-			second = max(second, stack.Pop())
+		for stack.IsEmpty() && nums[i]> stack.Peek().(int){
+			second = max(second, stack.Pop().(int))
 		}
 		stack.Push(nums[i])
 
