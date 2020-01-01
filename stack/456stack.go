@@ -28,7 +28,6 @@ func (s *stack) Len() int{
 const (
 	INT_MAX = int(^uint(0) >> 1)
 	INT_MIN = ^INT_MAX
-
 )
 
 //3, 1, 4, 2
@@ -42,15 +41,15 @@ func find132pattern(nums []int) bool {
 		return false
 	}
 	stack := Stack{}
-	len :=len(nums)-1
+	len := len(nums) - 1
 
 	second := INT_MIN
-	for i:=len;i>=0;i--{
-		if nums[i] < second{
+	for i := len; i >= 0; i-- {
+		if nums[i] < second {
 			return true
 		}
 
-		for stack.IsEmpty() && nums[i]> stack.Peek().(int){
+		for stack.IsEmpty() && nums[i] > stack.Peek().(int) {
 			second = max(second, stack.Pop().(int))
 		}
 		stack.Push(nums[i])
@@ -60,8 +59,8 @@ func find132pattern(nums []int) bool {
 	return false
 }
 
-func max(i,j int) int {
-	if i>j{
+func max(i, j int) int {
+	if i > j {
 		return i
 	}
 	return j

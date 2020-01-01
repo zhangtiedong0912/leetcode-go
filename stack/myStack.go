@@ -1,8 +1,8 @@
 package stack
 
 type MyStack struct {
-	data     []interface{}
-	length   int
+	data   []interface{}
+	length int
 }
 
 func InitMyStack() *MyStack {
@@ -10,7 +10,7 @@ func InitMyStack() *MyStack {
 }
 
 func (s *MyStack) Push(data interface{}) {
-	s.data = append(s.data,data)
+	s.data = append(s.data, data)
 	s.length++
 }
 

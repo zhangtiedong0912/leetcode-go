@@ -9,15 +9,15 @@ package stack
 */
 func nextGreaterElements(nums []int) []int {
 	len := len(nums)
-	res := make([]int,len)
+	res := make([]int, len)
 	stack := InitMyStack()
-	for i:= 2 * len - 1;i>=0;i-- {
+	for i := 2*len - 1; i >= 0; i-- {
 		for !stack.IsEmpty() && stack.Peek().(int) <= nums[i%len] {
 			stack.Pop()
 		}
-		if stack.IsEmpty(){
+		if stack.IsEmpty() {
 			res[i%len] = -1
-		}else{
+		} else {
 			res[i%len] = stack.Peek().(int)
 		}
 		stack.Push(nums[i%len])

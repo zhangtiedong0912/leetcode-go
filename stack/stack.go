@@ -89,5 +89,3 @@ func (s *Stack) Clear() {
 	s.length = 0
 	s.capacity = 8
 }
-
-

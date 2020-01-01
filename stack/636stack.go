@@ -22,40 +22,38 @@ logs =
 
 */
 func exclusiveTime(n int, logs []string) []int {
-	res := make([]int,n)
+	res := make([]int, n)
 	stack := InitMyStack()
 
-	s :=strings.Split(logs[0],":")
+	s := strings.Split(logs[0], ":")
 
-	index,err := strconv.Atoi(s[0])
+	index, err := strconv.Atoi(s[0])
 	if err != nil {
 		return res
 	}
-	prev,err := strconv.Atoi(s[2])
+	prev, err := strconv.Atoi(s[2])
 	if err != nil {
 		return res
 	}
 	stack.Push(index)
 
-	for i:=1;i<len(logs);i++{
-		arr :=strings.Split(logs[i],":")
-		index,_ := strconv.Atoi(arr[0])
-		value,_ := strconv.Atoi(arr[2])
+	for i := 1; i < len(logs); i++ {
+		arr := strings.Split(logs[i], ":")
+		index, _ := strconv.Atoi(arr[0])
+		value, _ := strconv.Atoi(arr[2])
 
 		if arr[1] == "start" {
-			if !stack.IsEmpty(){
+			if !stack.IsEmpty() {
 				res[stack.Peek().(int)] += value - prev
 			}
 			stack.Push(index)
 			prev = value
-		}else {
+		} else {
 			res[stack.Peek().(int)] += value - prev + 1
 			stack.Pop()
-			prev = value+1
+			prev = value + 1
 		}
 
 	}
-
 	return res
-
 }

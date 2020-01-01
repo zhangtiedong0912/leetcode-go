@@ -2,26 +2,26 @@ package stack
 
 type stack []byte
 
-func (s *stack) Push(v byte){
+func (s *stack) Push(v byte) {
 	*s = append((*s), v)
 }
 
-func (s *stack) Pop() byte{
+func (s *stack) Pop() byte {
 	l := len(*s)
-	v := (*s)[l - 1]
-	*s = (*s)[:l - 1]
+	v := (*s)[l-1]
+	*s = (*s)[:l-1]
 
 	return v
 }
 
-func (s *stack) Seek() byte{
+func (s *stack) Seek() byte {
 	l := len(*s)
-	v := (*s)[l - 1]
+	v := (*s)[l-1]
 
 	return v
 }
 
-func (s *stack) Len() int{
+func (s *stack) Len() int {
 	return len(*s)
 }
 
@@ -31,16 +31,16 @@ func removeKdigits(num string, k int) string {
 	stack := stack{}
 
 	//边界判断
-	if len(num) == 0{
+	if len(num) == 0 {
 		return res
 	}
-	if k== 0 {
+	if k == 0 {
 		return num
 	}
 
 	// k > 0 并且 值小于栈中的值就出栈，否则进栈，这样栈中留下的就是较小值（从前往后）
-	for _,v :=range num{
-		for k > 0 && stack.Len()!=0 && byte(v) < stack.Seek(){
+	for _, v := range num {
+		for k > 0 && stack.Len() != 0 && byte(v) < stack.Seek() {
 			stack.Pop()
 			k--
 		}
@@ -48,17 +48,17 @@ func removeKdigits(num string, k int) string {
 	}
 
 	//注意  k 没用完，出现递增的情况  比如 12345 ，删除后面的即可
-	for k>0 {
+	for k > 0 {
 		stack.Pop()
 		k--
 	}
 
 	//清除前缀为0
 	i := 0
-	for _,v := range stack{
+	for _, v := range stack {
 		if v != '0' {
 			break
-		}else {
+		} else {
 			i++
 		}
 	}
@@ -70,8 +70,6 @@ func removeKdigits(num string, k int) string {
 	}
 	return res
 }
-
-
 
 /*class Solution {
 //10 ms, 在所有 Java 提交中击败了83.60%的用户
@@ -129,4 +127,3 @@ return str.length() == 0 ? "0" : str.toString();
 
 }
 }*/
-
