@@ -8,19 +8,19 @@ type myData struct {
 }
 
 func dailyTemperatures(T []int) []int {
-	res :=make([]int,len(T))
+	res := make([]int, len(T))
 	stack := InitMyStack()
 
-	for i:= len(T) - 1; i >= 0 ; i -- {
+	for i := len(T) - 1; i >= 0; i-- {
 		for !stack.IsEmpty() && T[i] >= stack.Peek().(myData).Value {
 			stack.Pop()
 		}
 		if stack.IsEmpty() {
 			res[i] = 0
-		}else{
+		} else {
 			res[i] = stack.Peek().(myData).Index - i
 		}
-		stack.Push(myData{Index:i,Value:T[i]})
+		stack.Push(myData{Index: i, Value: T[i]})
 	}
 	return res
 }

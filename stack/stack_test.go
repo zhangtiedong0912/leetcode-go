@@ -46,3 +46,19 @@ func TestDailyTemperatures(t *testing.T) {
 	fmt.Println(res)
 }
 
+func TestDecodeAtIndex(t *testing.T) {
+	res := decodeAtIndex("leet2code3", 6)
+	fmt.Println(res)
+	res = decodeAtIndex("leet2code3", 10)
+	fmt.Println(res)
+	res = decodeAtIndex("ha22", 5)
+	fmt.Println(res)
+	res = decodeAtIndex("aw4eguc6cs", 41)
+	fmt.Println(res)
+}
+
+func TestSumSubarrayMins(t *testing.T) {
+	res := sumSubarrayMins([]int{3,1,2,4})
+	fmt.Println(res)
+}
+

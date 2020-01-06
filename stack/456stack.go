@@ -58,10 +58,3 @@ func find132pattern(nums []int) bool {
 
 	return false
 }
-
-func max(i, j int) int {
-	if i > j {
-		return i
-	}
-	return j
-}
